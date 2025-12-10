@@ -24,7 +24,9 @@ int main() {
   int n;
   std::cin >> n;
 
-  fizz_buzz(n);
+  for (auto line : fizz_buzz(n)) {
+    std::cout << line << std::endl;
+  }
 
   return 0;
 }
